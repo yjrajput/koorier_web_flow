@@ -502,6 +502,7 @@
             setTimeout(() => {
                 updateContinueButtonState();
             }, 100);
+            console.log('hello')
         }
 
         function cancelOnboarding() {
