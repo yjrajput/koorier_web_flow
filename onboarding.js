@@ -502,13 +502,13 @@
             setTimeout(() => {
                 updateContinueButtonState();
             }, 100);
-            console.log('hello')
+            
         }
 
         function cancelOnboarding() {
             document.getElementById('main-content').style.display = 'block';
-            document.querySelector('.footer').style.display = 'block';
-            document.querySelector('.navbar').style.display = 'flex';
+            document.querySelector('.seller-onbording-footer-section').style.display = 'block';
+            document.querySelector('.seller-nav-section').style.display = 'flex';
             document.getElementById('onboarding-page').classList.remove('active');
             resetOnboarding();
             window.scrollTo(0, 0);
