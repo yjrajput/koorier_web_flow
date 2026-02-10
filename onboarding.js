@@ -1,3 +1,5 @@
+        console.log('onboarding.js loaded');
+        alert('JS loaded');
 
         // ==================== API CONFIGURATION ====================
         const API_BASE_URL = 'https://integapi.koorierinc.net/qa/api';
