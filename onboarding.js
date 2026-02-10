@@ -295,19 +295,19 @@
 
             switch (status) {
                 case 'checking':
-                    indicator.innerHTML = '<i class="fas fa-spinner fa-spin" style="color: var(--primary-main);"></i>';
+                    indicator.innerHTML = '<i class="fas fa-spinner fa-spin" style="color: #5d48ff;"></i>';
                     break;
                 case 'available':
-                    indicator.innerHTML = '<i class="fas fa-check-circle" style="color: var(--success-green);"></i>';
+                    indicator.innerHTML = '<i class="fas fa-check-circle" style="color: #d0fd5b;"></i>';
                     break;
                 case 'taken':
-                    indicator.innerHTML = '<i class="fas fa-times-circle" style="color: var(--error-red);"></i>';
+                    indicator.innerHTML = '<i class="fas fa-times-circle" style="color: #ff4d4d;"></i>';
                     break;
                 case 'error':
                     indicator.innerHTML = '<i class="fas fa-exclamation-triangle" style="color: #fbbf24;"></i>';
                     break;
                 case 'valid':
-                    indicator.innerHTML = '<i class="fas fa-check" style="color: var(--success-green);"></i>';
+                    indicator.innerHTML = '<i class="fas fa-check" style="color: #d0fd5b;"></i>';
                     break;
                 default:
                     return;
