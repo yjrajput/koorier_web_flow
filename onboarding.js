@@ -1016,7 +1016,7 @@
                 align-items: flex-start;
                 gap: 0.75rem;
             `;
-                const cardBody = document.querySelector('#step-2 .card-body');
+                const cardBody = document.querySelector('#step-2 .seller-card-body');
                 cardBody.insertBefore(errorBanner, cardBody.firstChild);
             }
 
