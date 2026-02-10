@@ -891,7 +891,7 @@
                 postalCode,
                 serviceFsaZones: selectedFsaZones
             };
-
+            console.log('Business Payload:', formData.business);
             // Disable button and show loading
             btn.disabled = true;
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating Account...';
