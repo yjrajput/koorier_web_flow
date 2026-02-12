@@ -1102,18 +1102,18 @@
             btn.disabled = true;
 
             hidePaymentError();
-            showLoading(true);
+            // showLoading(true);
 
             try {
                 // Simulate payment processing (replace with actual payment gateway integration)
                 await new Promise(resolve => setTimeout(resolve, 1500));
 
-                showLoading(false);
+                // showLoading(false);
                 nextStep(5); // Go to success page
 
             } catch (error) {
                 console.error('Payment error:', error);
-                showLoading(false);
+                // showLoading(false);
                 btn.innerHTML = originalBtnText;
                 btn.disabled = false;
                 showPaymentError(error.message || 'Payment failed. Please try again.');
