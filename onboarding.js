@@ -897,7 +897,7 @@
             // Disable button and show loading
             btn.disabled = true;
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Creating Account...';
-            showLoading(true);
+            // showLoading(true);
 
             try {
                 const payload = buildRegistrationPayload();
@@ -925,7 +925,7 @@
                     // Parse the error response
                     const parsedError = parseApiError(data);
 
-                    showLoading(false);
+                    // showLoading(false);
                     btn.disabled = false;
                     btn.innerHTML = originalBtnText;
 
@@ -981,7 +981,7 @@
 
                 // Success - store response and proceed
                 formData.response = data;
-                showLoading(false);
+                // showLoading(false);
                 btn.disabled = false;
                 btn.innerHTML = originalBtnText;
 
@@ -993,7 +993,7 @@
 
             } catch (error) {
                 console.error('Registration error:', error);
-                showLoading(false);
+                // showLoading(false);
                 btn.disabled = false;
                 btn.innerHTML = originalBtnText;
                 showStep2Error(error.message || 'An unexpected error occurred. Please try again.');
