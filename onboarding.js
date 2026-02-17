@@ -327,19 +327,28 @@ function updateFieldStatus(fieldId, status) {
         transform: translateY(-50%); font-size: 0.9rem; z-index: 10;
     `;
 
-    const icons = {
-        'checking': '<i class="fas fa-spinner fa-spin" style="color: #5d48ff;"></i>',
-        'available': '<i class="fas fa-check-circle" style="color: #d0fd5b;"></i>',
-        'taken': '<i class="fas fa-times-circle" style="color: #ff4d4d;"></i>',
-        'error': '<i class="fas fa-exclamation-triangle" style="color: #fbbf24;"></i>',
-        'valid': '<i class="fas fa-check" style="color: #d0fd5b;"></i>'
-    };
+    switch (status) {
+                case 'checking':
+                    indicator.innerHTML = '<i class="fas fa-spinner fa-spin" style="color: #5d48ff;"></i>';
+                    break;
+                case 'available':
+                    indicator.innerHTML = '<i class="fas fa-check-circle" style="color: #d0fd5b;"></i>';
+                    break;
+                case 'taken':
+                    indicator.innerHTML = '<i class="fas fa-times-circle" style="color: #ff4d4d;"></i>';
+                    break;
+                case 'error':
+                    indicator.innerHTML = '<i class="fas fa-exclamation-triangle" style="color: #fbbf24;"></i>';
+                    break;
+                case 'valid':
+                    indicator.innerHTML = '<i class="fas fa-check" style="color: #d0fd5b;"></i>';
+                    break;
+                default:
+                    return;
+            }
 
-    if (icons[status]) {
-        indicator.innerHTML = icons[status];
-        wrapper.style.position = 'relative';
-        wrapper.appendChild(indicator);
-    }
+            wrapper.style.position = 'relative';
+            wrapper.appendChild(indicator);
 }
 
 function clearFieldStatus(fieldId) {
