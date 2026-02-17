@@ -328,11 +328,11 @@ function updateFieldStatus(fieldId, status) {
     `;
 
     const icons = {
-        'checking': '<i class="fas fa-spinner fa-spin" style="color: var(--primary-main);"></i>',
-        'available': '<i class="fas fa-check-circle" style="color: var(--success-green);"></i>',
-        'taken': '<i class="fas fa-times-circle" style="color: var(--error-red);"></i>',
+        'checking': '<i class="fas fa-spinner fa-spin" style="color: #5d48ff;"></i>',
+        'available': '<i class="fas fa-check-circle" style="color: #d0fd5b;"></i>',
+        'taken': '<i class="fas fa-times-circle" style="color: #ff4d4d;"></i>',
         'error': '<i class="fas fa-exclamation-triangle" style="color: #fbbf24;"></i>',
-        'valid': '<i class="fas fa-check" style="color: var(--success-green);"></i>'
+        'valid': '<i class="fas fa-check" style="color: #d0fd5b;"></i>'
     };
 
     if (icons[status]) {
