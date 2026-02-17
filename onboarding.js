@@ -1030,7 +1030,7 @@ function selectPaymentMethod(method) {
 
     // Update option buttons
     document.querySelectorAll('.payment-option').forEach(option => {
-        option.classList.toggle('active', option.dataset.method === method);
+        option.classList.toggle('activee', option.dataset.method === method);
     });
 
     updatePayButton();
