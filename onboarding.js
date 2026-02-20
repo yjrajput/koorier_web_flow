@@ -519,8 +519,8 @@ function clearAllErrors() {
 // ==================== ONBOARDING FLOW ====================
  function startOnboarding() {
             document.getElementById('main-content').style.display = 'none';
-            document.querySelector('.seller-onbording-footer-section').style.display = 'none';
-            // document.querySelector('.seller-nav-section').style.display = 'none';
+            // document.querySelector('.seller-onbording-footer-section').style.display = 'none';
+            document.querySelector('.seller-nav-section').style.display = 'none';
             document.getElementById('onboarding-page').classList.add('active');
             window.scrollTo(0, 0);
 
