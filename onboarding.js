@@ -520,7 +520,7 @@ function clearAllErrors() {
  function startOnboarding() {
             document.getElementById('main-content').style.display = 'none';
             document.querySelector('.seller-onbording-footer-section').style.display = 'none';
-            document.querySelector('.seller-nav-section').style.display = 'none';
+            // document.querySelector('.seller-nav-section').style.display = 'none';
             document.getElementById('onboarding-page').classList.add('active');
             window.scrollTo(0, 0);
 
@@ -533,7 +533,7 @@ function clearAllErrors() {
  function cancelOnboarding() {
             document.getElementById('main-content').style.display = 'block';
             document.querySelector('.seller-onbording-footer-section').style.display = 'block';
-            document.querySelector('.seller-nav-section').style.display = 'flex';
+            // document.querySelector('.seller-nav-section').style.display = 'flex';
             document.getElementById('onboarding-page').classList.remove('active');
             resetOnboarding();
             window.scrollTo(0, 0);
