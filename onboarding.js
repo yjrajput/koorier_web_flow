@@ -1,6 +1,6 @@
 // ==================== API CONFIGURATION ====================
-const API_BASE_URL = 'https://integapi.koorierinc.net/qa/api';
-const PUBLIC_API_BASE_URL = 'https://integapi.koorierinc.net/qa/public/api';
+const API_BASE_URL = 'https://integapi.koorierinc.net:443/api';
+const PUBLIC_API_BASE_URL = 'https://integapi.koorierinc.net:443/public/api';
 
 // ==================== PAYMENT CONFIGURATION ====================
 const ONBOARDING_FEE = 50.00;
@@ -1795,7 +1795,7 @@ function hidePaymentError() {
 
 // ==================== NAVIGATION ====================
 function goToDashboard() {
-    window.location.href = 'https://qa.koorierinc.net/login';
+    window.location.href = 'https://web.ssl.koorierinc.net/login';
 }
 
 console.log('Koorier DTS Registration Page Loaded - v2');
