@@ -1618,7 +1618,7 @@ function showStep(stepNumber) {
     if (stepNumber >= 1) {
         const mainContent = document.querySelector('.main-content');
         const footer = document.querySelector('footer');
-        const navbar = document.querySelector('nav');
+        const navbar = document.querySelector('.seller-nav-section');
 
         if (mainContent) mainContent.style.display = 'none';
         if (footer) footer.style.display = 'none';
