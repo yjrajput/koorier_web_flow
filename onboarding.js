@@ -1571,7 +1571,7 @@ function showOnboardingPage() {
 
     const mainContent = document.getElementById('main-content');
     const footer = document.querySelector('.footer');
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.seller-nav-section');
     const onboardingPage = document.getElementById('onboarding-page');
 
     if (!onboardingPage) {
