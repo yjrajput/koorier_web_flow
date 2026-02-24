@@ -1726,11 +1726,18 @@ function handlePaymentSuccess(result) {
     clearPaymentSession();
 
     // Populate success page with account details
-    if (result && result.formData && result.formData.response) {
-        const response = result.formData.response;
-        document.getElementById('confirm-accountId').textContent = response.accountId || 'N/A';
-        document.getElementById('confirm-email').textContent = response.email || 'N/A';
-        document.getElementById('confirm-business').textContent = response.businessName || 'N/A';
+    if (formData && formData.response) {
+        const response = formData.response;
+
+        document.getElementById('confirm-accountId').textContent =
+            response.accountId ||
+            (response.customerId ? `KR-${response.customerId}` : 'N/A');
+
+        document.getElementById('confirm-email').textContent =
+            response.email || formData.personal.email || 'N/A';
+
+        document.getElementById('confirm-business').textContent =
+            response.businessName || formData.business.businessName || 'N/A';
     }
 
     // Hide loading
