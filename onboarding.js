@@ -48,7 +48,7 @@ const fsaZonesByDC = {
         'GTA - Scarborough South', 'GTA - Scarborough North', 'GTA - Markham',
         'Pickering/Ajax', 'Oshawa/Whitby'
     ],
-    Vancouver: [
+    vancouver: [
         'Burnaby/Coquitlam', 'Richmond/Delta', 'Surrey', 'Center Vancouver',
         'Downtown Vancouver', 'North West Vancouver'
     ]
